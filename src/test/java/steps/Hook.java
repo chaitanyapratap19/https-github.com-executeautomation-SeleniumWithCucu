@@ -31,6 +31,8 @@ public class Hook extends BaseUtil{
         //Chrome driver
         //System.setProperty("webdriver.chrome.driver", "C:\\Libs\\chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security model
         base.Driver = new ChromeDriver();
     }
 
