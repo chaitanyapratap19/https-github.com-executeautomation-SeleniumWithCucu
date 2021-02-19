@@ -33,8 +33,12 @@ public class Hook extends BaseUtil{
         
         System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
         //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-        options.addArguments("--no-sandbox"); // Bypass OS security model
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+       options.addArguments("--no-sandbox"); // Bypass OS security model
+       options.addArguments("start-maximized"); // open Browser in maximized mode
+       options.addArguments("disable-infobars"); // disabling infobars
+       options.addArguments("--disable-extensions"); // disabling extensions       
+       options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+      
         //base.Driver = new ChromeDriver();
         base.Driver = new ChromeDriver(options);
     }
