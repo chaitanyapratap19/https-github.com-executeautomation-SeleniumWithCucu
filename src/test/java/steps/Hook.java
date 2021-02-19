@@ -33,7 +33,7 @@ public class Hook extends BaseUtil{
         
         System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
         //System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-       options.addArguments("--no-sandbox"); // Bypass OS security model
+       options.addArguments1("--no-sandbox"); // Bypass OS security model
        options.addArguments("headless"); // open Browser in maximized mode
        options.addArguments("start-maximized"); // open Browser in maximized mode
        options.addArguments("disable-infobars"); // disabling infobars
