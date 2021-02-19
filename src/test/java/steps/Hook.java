@@ -41,7 +41,7 @@ public class Hook extends BaseUtil{
        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
       
         //base.Driver = new ChromeDriver();
-        base.Driver = new ChromeDriver(options);
+        base.Driver = new ChromeDriver1(options);
     }
 
 
